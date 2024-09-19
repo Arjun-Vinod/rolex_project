@@ -1,0 +1,378 @@
+*{
+    margin:0;
+    padding:0;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: medium;
+}
+header{
+    display: grid;
+    height: 100px;
+    align-content: center;
+    background-color: rgb(0, 96, 57);  
+    position: sticky;
+    top:0;
+    z-index: 1;
+}
+ nav{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);;
+    background-color: rgb(0, 96, 57);
+    
+ }
+ .right{
+    display: grid;
+    grid-template-columns:repeat(4,1fr);
+ }
+ .logo{
+    display: grid;
+    justify-content: center;
+ }
+ .left{
+    display: grid;
+    padding-left: 50px;
+ }
+ .logo img{
+    height: 40px;
+    width: 60px;
+}
+nav ul li a{
+    text-decoration: none;
+    color: white;
+}
+
+nav ul li a:hover{
+    text-decoration:underline;
+}
+nav ul{
+    list-style: none;
+}
+.video{
+    position: relative;
+    width: 100%;
+    height: 70vh;
+    overflow: hidden;
+}
+#backgroundvideo{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.text{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    color: white;
+    z-index: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.text h2{
+    font-weight: lighter;
+    font-size: 2rem;
+    padding-bottom: 30px;
+}
+.text h1{
+    font-size: 4rem;
+    font-weight: bolder;
+}
+.line{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    padding-top: 50px;
+    padding-bottom: 50px;
+    
+}
+.line1{
+    display: grid;
+    justify-content:start;
+    padding-left: 100px;
+    line-height: 50px;
+    font-size: 2.5em;
+    color:  rgb(0, 96, 57);
+}
+.line2{
+    display: grid;
+    justify-content: start;
+    grid-gap: 20PX;
+    line-height: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: lighter;
+    font-size: larger;
+    color: rgb(92, 92, 92);
+}
+
+.line2 a{
+    text-decoration: none;
+    color:  rgb(0, 96, 57);
+    font-size: medium;
+    font-weight: bold;
+}
+.line2 a:hover{
+    color: black;
+}
+.key{
+    display: grid;
+    justify-content: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    position: sticky;
+    position: -webkit-sticky;
+    top: 100px;
+    z-index: 1;
+    background-color: white;
+}
+.key ul{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    
+}
+.key ul li{
+    list-style-type: none;
+}
+.key ul li a{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+.key ul li a:hover{
+    color: rgb(0, 96, 57);
+}
+.key ul li a:active{
+    text-decoration: underline;
+}
+.image1 {
+    display: grid;
+    grid-template-rows: repeat(6, 1fr);
+    width: 100%;
+    height: 500vh; 
+}
+
+.img1,.img4,.img6,.img12,.img13,.img14{
+    position: relative;
+    overflow: hidden;
+}
+
+.img1 img,.img4 img,.img6 img,.img12 img,.img13 img,.img14 img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: transform 0.5s ease;
+}
+.image2 {
+    display: grid;
+    grid-template-rows: repeat(8, 1fr);
+    width: 100%;
+    height: 700vh; 
+}
+
+.img2,.img3,.img5,.img7,.img8,.img9,.img10,.img11{
+    position: relative;
+    overflow: hidden;
+}
+
+.img2 img,.img3 img,.img5 img,.img7 img,.img8 img,.img9 img,.img10 img,.img11 img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: transform 0.5s ease;
+}
+.share{
+    display: grid;
+    justify-content: start;
+    padding-left: 50px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+.share ul{
+    display: grid;
+    grid-template-columns: repeat(7,1fr);
+    grid-gap: 10px;
+}
+.share ul li{
+    list-style-type: none;
+    color: rgb(0, 96, 57);
+}
+.share ul li a{
+    text-decoration: none;
+}
+.share ul li a:hover{
+    color: black;
+}
+.foot{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    /* height: 500px; */
+}
+.two{
+    display: grid;
+    grid-template-rows: repeat(3,1fr,2fr,1fr);
+}
+.three{
+    display: grid;
+    grid-template-rows:repeat(5,2fr,2fr,1fr,1fr,1fr);
+}
+.four{
+    display: grid;
+    grid-template-rows: repeat(4,2fr,1fr,1fr,2fr);
+    
+}
+.two ul li{
+    list-style-type: none;
+}
+.two ul li a{
+    text-decoration: none;
+    color: rgb(0, 96, 57);
+    line-height: 25px;
+}
+.three ul li{
+    list-style-type: none;
+}
+.three ul li a{
+    text-decoration: none;
+    color: rgb(0, 96, 57);
+    line-height: 25px;
+}
+.four ul li{
+    list-style-type: none;
+}
+.four ul li a{
+    text-decoration: none;
+    color: rgb(0, 96, 57);
+    line-height: 25px;
+}
+.head{
+    font-size: 20px;
+    font-weight: bold;   
+ }
+ .two ul li a:hover{
+    color: black;
+ }
+ .three ul li a:hover{
+    color: black;
+ }
+ .four ul li a:hover{
+    color: black;
+ }
+ .one{
+    display: grid;
+    justify-content: center;
+    align-items: start;
+ }
+ .one img{
+    width: 150px;
+    height: 150px;
+    
+ } 
+ .lang{
+    display: grid;
+    padding-top: 60px;
+    padding-left: 100px;
+    padding-bottom: 50px;
+ }
+ .lang a{
+    color: black;
+    font-size: 1rem;
+    font-weight:lighter;
+    text-decoration: none;
+ }
+ .lang a:hover{
+    color: rgb(0, 96, 57);
+ }
+ .footimg{
+    display: grid;
+    position:relative;
+    justify-content: center;
+    overflow: hidden;
+    height: 400px;
+    
+ }
+ .ovtext{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    line-height: 50px;
+    font-weight: bolder;
+    margin-top: -40px;
+ }
+ .ovtext h4 a{
+    text-decoration: none;
+    color: black;
+    font-weight: bolder;
+ }
+ .ovtext h4 a:hover{
+    text-decoration:underline;
+ }
+ .black{
+    position: absolute;
+    top: 50%;
+    left: 20%;
+    transform: translate(-50%,-50%);
+    text-align: start;
+    line-height: 40px;
+    font-size: 20px;
+    
+ }
+ .white{
+    position: absolute;
+    top: 50%;
+    left: 20%;
+    transform: translate(-50%,-50%);
+    text-align: start;
+    line-height: 60px;
+    font-size: 20px;
+    color:white
+ }
+ .black h2{
+    font-size: 40px;
+ }
+ .black h4{
+    font-weight: lighter;
+    line-height: 30px;
+ }
+ .white h2{
+    font-size: 40px;
+ }
+ .white h4{
+    font-weight: lighter;
+    line-height: 30px;
+ }
+.img1 img:hover,.img4 img:hover,.img6 img:hover,.img12 img:hover,.img13 img :hover,.img14 img:hover{
+    transform: scale(1.1); 
+}
+.img2 img:hover,.img3 img:hover,.img5 img:hover,.img7 img:hover,.img8 img:hover,.img9 img:hover,.img10 img:hover,.img11 img:hover{
+    transform: scale(1.1); 
+}
+.footimg {
+    position: relative;
+    overflow: hidden;
+}
+
+/* .ovtext {
+    opacity: 0;
+    transform: translate(-50%, -40%);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.footimg:hover .ovtext {
+    opacity: 1;
+    transform: translate(-50%, -50%); 
+} */
+/* Add this to your existing CSS */
+
+
+
+
